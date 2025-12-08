@@ -41,7 +41,9 @@
 }
 
 .address {
+  grid-column: 1/2;
   all: unset;
+  max-width: 264px;
   line-height: 24px;
   font-size: 18px;
 }
@@ -257,4 +259,49 @@
 
 .about_text {
   font-size: 20px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 164px 1fr;
+  padding: 0 50px 82px;
+}
+
+.footer_menu {
+  grid-column: 2/3;
+  justify-self: center;
+}
+
+.footer_menu-list {
+  list-style: none;
+}
+
+.footer_menu-list-item {
+  font-size: 18px;
+  text-align: center;
+}
+
+.footer_menu-link {
+ text-decoration: underline;
+}
+
+.footer_menu-link_active:hover {
+  text-decoration: none;
+}
+
+.footer_social-list {
+  grid-column: 3/4;
+  justify-self: end;
+  display: flex;
+  gap: 48px;
+  list-style: none;
+}
+
+.footer_social-link {
+  text-decoration: none;
+}
+
+.footer_social-icon {
+  width: 48px;
+  height: 48px;
 }
