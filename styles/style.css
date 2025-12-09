@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  padding: 92px 50px 96px;
+  padding: 90px 50px 94px;
 }
 
 .header_menu {
@@ -21,14 +21,15 @@
 
 .header_links-list-item_no-bullit {
   list-style: none;
+  text-decoration: none;
 }
 
 .header_link {
-  text-decoration: underline;
+  border-bottom: 1px #000 solid;
 }
 
 .header_link_active:hover {
-  text-decoration: none;
+  border-bottom: none;
 }
 
 .header_logo {
@@ -54,11 +55,17 @@
   max-width: 240px;
 }
 
+.address-link_tel_mail {
+  text-decoration: none;
+  border-bottom: 1px #000 solid;
+}
+
 .cover {
   position: relative;
   z-index: 0;
   background-image: url("../images/cover.jpg");
-  background-position: cover;
+  background-position: 50% 50%;
+  background-size: cover;
   padding: 165px 50px 50px;
   min-height: 100px;
 }
@@ -70,14 +77,14 @@
   height: 100%;
   z-index: -1;
   background-color: #000;
-  opacity: 0.3;
+  opacity: 0.6;
 
 }
 
 .cover_title {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 19px;
   text-transform: uppercase;
   color: #fff;
   font-size: 100px;
@@ -115,7 +122,7 @@
 
 .cover_description {
   display: flex;
-  margin-top: 114px;
+  margin-top: 109px;
   align-items: center;
 }
 
@@ -179,7 +186,7 @@
 }
 
 .card_title {
-  margin: 48px 40px 30px;
+  margin: 48px 40px 35px;
   font-size: 22px;
   font-weight: 700;
   text-decoration: underline;
@@ -209,17 +216,20 @@
   display: block;
   margin-top: 30px;
   margin-left: 40px;
+  width: 193px;
   font-size: 20px;
-  text-decoration: underline;
+  text-decoration: none;
   font-weight: 400;
+  border-bottom: 1px #000 solid;
 }
 
 .about {
   display: grid;
-  grid-template-columns: 334px auto;
+  grid-template-columns: 334px 1fr;
   justify-items: center;
+  gap: 25px;
   width: 1052px;
-  margin: 160px 40px 180px;
+  margin: 154px 0 182px 24px;
 }
 
 .about_logo {
@@ -234,13 +244,12 @@
 }
 
 .about_logo-image {
-  width: 141px;
-  height: 112px;
+  width: 150px;
+  height: 121px;
 }
 
 .about_column {
-  margin-left: 10px;
-  margin-right: 20px;
+  margin-right: 3px;
 }
 
 .about_title {
@@ -258,7 +267,12 @@
 }
 
 .about_text {
+  flex-shrink: 0;
+  line-height: 24px;
   font-size: 20px;
+  word-break: keep-all;        
+  overflow-wrap: normal;       
+  hyphens: none;
 }
 
 .footer {
@@ -282,11 +296,12 @@
 }
 
 .footer_menu-link {
- text-decoration: underline;
+  all: unset;
+  border-bottom: 1px #000 solid;
 }
 
 .footer_menu-link_active:hover {
-  text-decoration: none;
+  border-bottom: none;
 }
 
 .footer_social-list {
