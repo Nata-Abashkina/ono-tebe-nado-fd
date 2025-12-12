@@ -12,11 +12,12 @@
 .header_links-list {
   display: flex;
   gap: 33px;
-  list-style: circle;  
+  list-style: circle;
 }
 
 .header_links-list-item {
   font-size: 18px;
+  font-weight: 400;
   line-height: 1.9;
 }
 
