@@ -134,19 +134,8 @@
   text-transform: uppercase;
   font-size: 22px;
   line-height: 1.3;
+  word-spacing: 18.5px;
   color: #fff;
-}
-
-.cover_description-text-word-spacing-min {
-  word-spacing: 20px;
-}
-
-.cover_description-text-word-spacing-max {
-  word-spacing: 18px;
-}
-
-.cover_description-text-word-spacing-miin {
-  word-spacing: 19px;
 }
 
 .bet-button {
